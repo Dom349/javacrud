@@ -1,0 +1,12 @@
+CREATE DATABASE useempleados;
+;
+
+use empleados;
+
+CREATE TABLE empleados (
+  id INT(11),NOT NULL PRIMARY KEY,
+  nombre VARCHAR(25) NOT NULL,
+  apellidos VARCHAR(25) NOT NULL,
+  direccion VARCHAR(25) NOT NULL,
+  telefono VARCHAR(25) NOT NULL,
+);
