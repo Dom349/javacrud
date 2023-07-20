@@ -1,0 +1,24 @@
+package clases;
+
+import java.sql.connection;
+        
+        
+public class conectar {
+   
+    connection cn;
+    
+    public connection conexion(){
+        try {
+            class.forName("com.mysql.jdbc.drive");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost/bd","root","");
+            System.out.println("conectado");
+        } catch (Exception e) {
+            
+            
+            System.err.println(e.getMessage());
+        }
+        
+        return cn;
+    }
+    
+}
